@@ -29,4 +29,9 @@ public class LoginController {
       e.printStackTrace();
     }
   }
+
+  @FXML
+  protected void handleLoginButtonAction(ActionEvent event) {
+    System.out.println("development");
+  }
 }
