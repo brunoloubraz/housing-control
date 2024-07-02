@@ -8,9 +8,25 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class RegisterController {
+
+  @FXML
+  private TextField nome;
+
+  @FXML
+  private TextField rg;
+
+  @FXML
+  private TextField cpf;
+
+  @FXML
+  private PasswordField senha;
+
   @FXML
   protected void handleReturnButtonAction(ActionEvent event) {
     try {
@@ -26,4 +42,10 @@ public class RegisterController {
       e.printStackTrace();
     }
   }
+
+  @FXML
+  private void handleRegisterButtonAction(ActionEvent event) {
+    System.out.println("development");
+  }
+
 }
