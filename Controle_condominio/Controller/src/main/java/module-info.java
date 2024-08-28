@@ -9,7 +9,8 @@ module com.project.controller {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.sql;
 
-    opens com.project.controller to javafx.fxml;
+  opens com.project.controller to javafx.fxml;
     exports com.project.controller;
 }
